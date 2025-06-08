@@ -1,66 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Studio Ghar Se</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      background: url('annie-spratt-oOp55T-gPY4-unsplash.jpg?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Montserrat', sans-serif;
-    }
-
-    .container {
-      text-align: center;
-      position: relative;
-      padding: 2rem;
-    }
-
-    .logo {
-      width: 100px;
-      height: auto;
-      margin-bottom: 1rem;
-      transition: transform 0.1s ease-out;
-      fill: white;
-    }
-
-    p {
-      max-width: 480px;
-      margin: 0 auto;
-      font-size: 1rem;
-      color: white;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <!-- Apple Logo SVG -->
-    <svg width="200" height="auto">       
-     <image xlink:href="studiogharse/Logo_Studio Ghar Se.svg" src="yourfallback.png" width="200" height="auto"/>    
-    </svg>
-
-    <p>This multi-purpose exfoliating scrub is made entirely from food ingredients—safe enough for kids, gentle enough for daily use, and effective for all skin types. Rich in natural exfoliants and nourishing elements, it leaves skin soft, smooth, and glowing.</p>
+    <!-- Logo SVG -->
+    <div class="logo" id="logo">
+      <!-- SVG will be injected here -->
+    </div>
   </div>
-
-  <script>
-    const logo = document.querySelector('.logo');
-    const maxOffset = 15;
-
-    document.addEventListener('mousemove', (e) => {
-      const { innerWidth, innerHeight } = window;
-      const offsetX = ((e.clientX / innerWidth) - 0.5) * 2 * maxOffset;
-      const offsetY = ((e.clientY / innerHeight) - 0.5) * 2 * maxOffset;
-      logo.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
